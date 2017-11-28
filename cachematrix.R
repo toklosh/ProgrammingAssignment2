@@ -13,7 +13,8 @@ makeCacheMatrix <- function(x = matrix()) {
   getinverse <- function() invmatrix
   list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
-
+#...When the function ends, it returns a fully formed object of type makeVector()
+#..The cacheSolve function computes the inverse of the matrix object created by makeCacheMatrix 
 
 cacheSolve <- function(x, ...) {
   invmatrix<- x$getinverse()
